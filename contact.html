@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - CL Nails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Website Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="contact.html">BOOKING</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <form id="contactForm">
+            <div class="column-1">
+                <label for="name">NAME</label>
+                <input type="text" id="name" required>
+    
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" required>
+    
+                <label for="number">PHONE NUMBER</label>
+                <input type="tel" id="phone" required pattern="[\d]{10}" title="Please enter a valid 10-digit phone number">
+    
+                <label for="service">SERVICE</label>
+                <select id="service" required>
+                    <option value="">Select a service</option>
+                    <option value="acrylic-fullset">Acrylic Full Set - $50</option>
+                    <option value="acrylic-refill">Acrylic Refill - $40</option>
+                    <option value="solar-gel-fullset">Solar Gel Full Set - $60</option>
+                    <option value="solar-gel-refill">Solar Gel Refill - $50</option>
+                    <option value="bio-gel-fullset">Bio-Gel Full Set - $70</option>
+                    <option value="bio-gel-refill">Bio-Gel Refill - $60</option>
+                    <option value="dipping-powder-fullset">Dipping Powder Full Set - $65</option>
+                    <option value="dipping-powder-refill">Dipping Powder Refill - $60</option>
+                    <option value="signature-manicure">Signature Manicure - $30</option>
+                    <option value="signature-pedicure">Signature Pedicure - $45</option>
+                    <option value="signature-mani-pedi">Signature Mani & Pedi - $65</option>
+                    <option value="spa-manicure">CL’s Spa Manicure - $40</option>
+                    <option value="spa-pedicure">CL’s Spa Pedicure - $65</option>
+                    <option value="spa-mani-pedi">CL’s Spa Mani & Pedi - $95</option>
+                    <option value="mini-mani-pedi">Mini Mani & Pedi (Under 10) - $40</option>
+                    <option value="dipping-powder-overlay">Dipping Powder Overlay - $55</option>
+                    <option value="shellac-manicure">Shellac Manicure - $45</option>
+                    <option value="shellac-pedicure">Shellac Pedicure - $60</option>
+                    <option value="shellac-mani-pedi">Shellac Mani & Pedi - $95</option>
+                    <option value="shellac-polish-hand">Shellac Polish Change on Hand - $30</option>
+                    <option value="shellac-polish-feet">Shellac Polish Change on Feet - $35</option>
+                    <option value="regular-polish-hand">Regular Polish on Hand - $20</option>
+                    <option value="regular-polish-feet">Regular Polish on Feet - $25</option>
+                    <option value="nail-takeoff">Nail Take Off - $20</option>
+                    <option value="shellac-takeoff">Shellac Take Off - $10</option>
+                    <option value="nail-repair">Nail Repair - $5+</option>
+                    <option value="3d-design">3D Design - $20+</option>
+                    <option value="nail-design">Design - $10+</option>
+                </select>
+            </div>
+    
+            <div class="column-2">
+                <label for="date">DATE</label>
+                <input type="date" id="date" required>
+    
+                <label for="time">TIME</label>
+                <input type="time" id="time" required>
+    
+                <label for="notes">NOTES</label>
+                <input type="text" id="notes">
+
+                <button type="submit">BOOK</button>
+            </div>
+        </form>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 CL Nails. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
